@@ -1,0 +1,23 @@
+{
+  "name": "alternative-skype",
+  "productName": "Alternative Skype",
+  "description": "Alternative Skype client for Linux",
+  "version": "0.0.1",
+  "author": "ivan andrusenko",
+  "copyright": "© 2016",
+  "main": "background.js",
+  "dependencies": {
+    "fs-jetpack": "^0.7.0"
+  },
+  "packageNameTemplate": "{{name}}-v{{version}}-{{platform}}-{{arch}}",
+  "osx": {
+    "build": "1",
+    "identifier": "com.github.is.this.the.payne.residence",
+    "LSApplicationCategoryType": "public.app-category.productivity",
+    "//codeSignIdentitiy": {
+      "dmg": "Developer ID Application: Company Name (APPIDENTITY)",
+      "MAS": "3rd Party Mac Developer Application: Company Name (APPIDENTITY)",
+      "MASInstaller": "3rd Party Mac Developer Installer: Company Name (APPIDENTITY)"
+    }
+  }
+}
